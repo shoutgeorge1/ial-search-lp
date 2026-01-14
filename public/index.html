@@ -280,10 +280,36 @@
             gap: 24px;
             flex-wrap: wrap;
         }
+        .trust-bar-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+        }
         .trust-bar-logo {
-            height: 36px;
+            height: 40px;
             width: auto;
             object-fit: contain;
+            filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35));
+        }
+        .trust-bar-rating {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        .trust-bar-score {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+        .trust-bar-stars {
+            font-size: 14px;
+            color: var(--brand-accent-yellow);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            letter-spacing: 1px;
         }
         .trust-bar-text {
             font-size: 14px;
@@ -293,6 +319,18 @@
         @media (max-width: 768px) {
             .see-through-bar .see-through-inner {
                 border-radius: 16px;
+            }
+            .trust-bar-logo {
+                height: 32px;
+            }
+            .trust-bar-item {
+                padding: 6px 10px;
+            }
+            .trust-bar-score {
+                font-size: 16px;
+            }
+            .trust-bar-stars {
+                font-size: 12px;
             }
         }
         .case-card:hover {
@@ -1018,8 +1056,20 @@
             <div class="see-through-bar trust-bar-overlay">
                 <div class="see-through-inner">
                     <div class="trust-bar-items">
-                        <img src="images/la/google-rating.png" alt="Google 5 Star Rating" class="trust-bar-logo">
-                        <img src="images/la/yelp-logo.jpg" alt="Yelp" class="trust-bar-logo">
+                        <div class="trust-bar-item">
+                            <img src="images/la/google-rating.png" alt="Google 5 Star Rating" class="trust-bar-logo">
+                            <div class="trust-bar-rating">
+                                <div class="trust-bar-score">4.9</div>
+                                <div class="trust-bar-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="trust-bar-item">
+                            <img src="images/la/yelp-logo.jpg" alt="Yelp" class="trust-bar-logo">
+                            <div class="trust-bar-rating">
+                                <div class="trust-bar-score">4.5</div>
+                                <div class="trust-bar-stars">★★★★☆</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1035,16 +1085,6 @@
                 <img src="images/la/trust-badge-3.webp" alt="Trust Badge" class="trust-badge-img pop">
                 <img src="images/la/lacba.jpg" alt="LACBA" class="trust-badge-img" style="height: 100px; width: auto; object-fit: contain;">
                 <img src="images/la/trust-badge-4.webp" alt="Trust Badge" class="trust-badge-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="see-through-bar section-with-bg">
-        <div class="see-through-inner">
-            <div class="trust-bar-items">
-                <img src="images/la/google-rating.png" alt="Google 5 Star Rating" class="trust-bar-logo">
-                <div class="trust-bar-text">Yelp 5.0 ★★★★★</div>
-                <div class="trust-bar-text">500+ 5-Star Reviews</div>
             </div>
         </div>
     </section>
@@ -1245,13 +1285,6 @@
             <div class="reviews-header">
                 <h2>What Our Clients Say</h2>
                 <p style="font-size: 18px; color: var(--brand-gray-700); margin-bottom: 24px;">Real reviews from real clients across Los Angeles County</p>
-                <div style="display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap; margin-bottom: 24px;">
-                    <img src="images/la/google-rating.png" alt="Google 5 Star Rating" style="max-width: 200px; height: auto;">
-                    <img src="images/la/yelp-logo.jpg" alt="Yelp" style="max-width: 140px; height: auto;">
-                    <div style="display: inline-flex; align-items: center; gap: 12px;">
-                        <span style="color: var(--brand-gray-900); font-weight: 600; font-size: 18px;">4.9 ⭐ Yelp Rating</span>
-                    </div>
-                </div>
             </div>
             <div class="review-cards">
                 <div class="review-card">
