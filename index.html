@@ -227,7 +227,7 @@
             }
         }
         .hero {
-            background: linear-gradient(rgba(11, 45, 82, 0.75), rgba(11, 45, 82, 0.75)), url('https://www.theodysseyonline.com/media-library/image.jpg?id=55902653&width=980&quality=50') center center/cover;
+            background: linear-gradient(rgba(11, 45, 82, 0.75), rgba(11, 45, 82, 0.75)), url('/images/la/hero-bg.jpg') center center/cover;
             min-height: 520px;
             display: flex;
             align-items: center;
@@ -246,7 +246,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://www.theodysseyonline.com/media-library/image.jpg?id=55902653&width=980&quality=50') center center/cover;
+            background: url('/images/la/hero-bg.jpg') center center/cover;
             background-attachment: fixed;
             opacity: 0.05;
             z-index: 0;
@@ -832,17 +832,92 @@
             }
         }
     </style>
-    <!-- GTM PLACEHOLDER -->
-    <!-- GA4 PLACEHOLDER -->
-    <!-- CALLRAIL DNI -->
-    <script type="text/javascript" src="//cdn.callrail.com/companies/328698587/a8e768ec751936e4d680/12/swap.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- CALLRAIL DNI - MOVED TO GTM (remove this when GTM is configured) -->
+    <!-- <script type="text/javascript" src="//cdn.callrail.com/companies/328698587/a8e768ec751936e4d680/12/swap.js"></script> -->
+    
+    <!-- GTM Tracking Events Script -->
+    <script>
+        // Initialize dataLayer if it doesn't exist
+        window.dataLayer = window.dataLayer || [];
+        
+        // Phone click tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track phone clicks
+            var phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if(typeof dataLayer !== 'undefined') {
+                        dataLayer.push({
+                            'event': 'phone_click',
+                            'phone_number': this.getAttribute('href').replace('tel:', '')
+                        });
+                    }
+                });
+            });
+            
+            // Form start tracking (first field focus)
+            var form = document.getElementById('case-evaluation-form');
+            if(form) {
+                var formFields = form.querySelectorAll('input, select, textarea');
+                var formStarted = false;
+                formFields.forEach(function(field) {
+                    field.addEventListener('focus', function() {
+                        if(!formStarted && typeof dataLayer !== 'undefined') {
+                            formStarted = true;
+                            dataLayer.push({
+                                'event': 'form_start',
+                                'form_name': 'case_evaluation'
+                            });
+                        }
+                    }, { once: true });
+                });
+            }
+            
+            // Engaged 30s timer
+            setTimeout(function() {
+                if(typeof dataLayer !== 'undefined') {
+                    dataLayer.push({
+                        'event': 'engaged_30s'
+                    });
+                }
+            }, 30000);
+            
+            // Scroll 90% tracking
+            var scroll90Fired = false;
+            window.addEventListener('scroll', function() {
+                if(!scroll90Fired) {
+                    var scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+                    if(scrollPercent >= 0.90) {
+                        scroll90Fired = true;
+                        if(typeof dataLayer !== 'undefined') {
+                            dataLayer.push({
+                                'event': 'scroll_90'
+                            });
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="sticky-header">
         <div class="container">
             <div class="header-content">
                 <div style="display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
-                    <img src="https://lirp.cdn-website.com/b9dcb906/dms3rep/multi/opt/INSIDER_LOGO_WHITE-1920w.png" alt="Insider Accident Lawyers" class="header-logo" style="filter: brightness(0);">
+                    <img src="/images/la/logo.png" alt="Insider Accident Lawyers" class="header-logo" style="filter: brightness(0);">
                     <nav class="header-nav">
                         <a href="#your-case">Your Case</a>
                         <a href="#free-evaluation">Free Evaluation</a>
@@ -888,8 +963,8 @@
                     </div>
                 </div>
                 <picture>
-                    <source media="(max-width: 768px)" srcset="https://lirp.cdn-website.com/b9dcb906/dms3rep/multi/opt/insider_attorneys_mobile-640w.webp">
-                    <img src="https://lirp.cdn-website.com/b9dcb906/dms3rep/multi/opt/Shawn-Session-309F-1920w.webp" alt="Shawn and Partners" class="hero-attorney-img">
+                    <source media="(max-width: 768px)" srcset="/images/la/attorney-mobile.webp">
+                    <img src="/images/la/attorney-hero.webp" alt="Shawn and Partners" class="hero-attorney-img">
                 </picture>
             </div>
         </div>
@@ -899,11 +974,11 @@
         <div class="trust-badges-container">
             <div class="trust-badges-headline">Trusted & Recognized By</div>
             <div class="trust-badges-row">
-                <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/672288267253cda42411b558.webp" alt="Trust Badge" class="trust-badge-img">
-                <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/6722892a834a02695f868fd6.webp" alt="Trust Badge" class="trust-badge-img">
-                <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/672289675576cf6a45fcdf32.webp" alt="Trust Badge" class="trust-badge-img">
-                <img src="https://wlala.org/wp-content/uploads/2021/08/LACBA.jpg" alt="LACBA" class="trust-badge-img" style="height: 100px; width: auto; object-fit: contain;">
-                <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/67228b484d5f691af9405f05.webp" alt="Trust Badge" class="trust-badge-img">
+                <img src="/images/la/trust-badge-1.webp" alt="Trust Badge" class="trust-badge-img">
+                <img src="/images/la/trust-badge-2.webp" alt="Trust Badge" class="trust-badge-img">
+                <img src="/images/la/trust-badge-3.webp" alt="Trust Badge" class="trust-badge-img">
+                <img src="/images/la/lacba.jpg" alt="LACBA" class="trust-badge-img" style="height: 100px; width: auto; object-fit: contain;">
+                <img src="/images/la/trust-badge-4.webp" alt="Trust Badge" class="trust-badge-img">
             </div>
         </div>
     </section>
@@ -1037,19 +1112,19 @@
                 <div class="process-step">
                     <div class="process-step-number">Step 1</div>
                     <h3>Free Case Evaluation</h3>
-                    <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/c05b7525-e6dc-4f78-9ab2-30b552299ed3.webp" alt="Case Evaluation" class="process-step-img">
+                    <img src="/images/la/process-step-1.webp" alt="Case Evaluation" class="process-step-img">
                     <p>We'll review your accident details and explain your rights. We handle all communication with insurance companies. No cost to evaluate your case.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-step-number">Step 2</div>
                     <h3>Building Your Case</h3>
-                    <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/31afd17f-9576-4cc8-8d62-beaca26120fc.webp" alt="Case Implementation" class="process-step-img">
+                    <img src="/images/la/process-step-2.webp" alt="Case Implementation" class="process-step-img">
                     <p>Our accident attorneys investigate, gather evidence, and review medical records. We build a strong case and work quickly to get you the settlement you deserve.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-step-number">Step 3</div>
                     <h3>Getting You Maximum Compensation</h3>
-                    <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/c6cf5563-69b6-4651-8f18-35abff0f6dc1.webp" alt="Case Closure" class="process-step-img">
+                    <img src="/images/la/process-step-3.webp" alt="Case Closure" class="process-step-img">
                     <p>We negotiate aggressively for maximum compensation. Our experienced personal injury attorneys are prepared to take cases to trial when needed. No fee unless we win.</p>
                 </div>
             </div>
@@ -1073,7 +1148,7 @@
     <section id="about-us" class="attorney-bio section-with-bg" style="padding-top: 100px;">
         <div class="container">
             <div class="attorney-bio-content">
-                <img src="https://lirp.cdn-website.com/b9dcb906/dms3rep/multi/opt/Shawn-Session-309F-1920w.webp" alt="Shawn Rokni" class="attorney-photo">
+                <img src="/images/la/attorney-hero.webp" alt="Shawn Rokni" class="attorney-photo">
                 <div class="attorney-details">
                     <h2>Meet Your Attorney</h2>
                     <div class="attorney-name">Shawn Rokni</div>
@@ -1105,7 +1180,7 @@
                 <h2>What Our Clients Say</h2>
                 <p style="font-size: 18px; color: var(--brand-gray-700); margin-bottom: 24px;">Real reviews from real clients across Los Angeles County</p>
                 <div style="display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap; margin-bottom: 24px;">
-                    <img src="https://assets.cdn.filesafe.space/cChTaG9RFcAJRX3zYsG6/media/67227d94e777fd6b401513e3.png" alt="Google 5 Star Rating" style="max-width: 200px; height: auto;">
+                    <img src="/images/la/google-rating.png" alt="Google 5 Star Rating" style="max-width: 200px; height: auto;">
                     <div style="display: inline-flex; align-items: center; gap: 12px;">
                         <span style="color: var(--brand-gray-900); font-weight: 600; font-size: 18px;">4.9 ⭐ Yelp Rating</span>
                     </div>
@@ -1157,7 +1232,7 @@
             <div class="form-container">
                 <h2 style="text-align: center; margin-bottom: 16px;">Get Your Free Case Evaluation</h2>
                 <p style="text-align: center; font-size: 18px; color: var(--brand-gray-700); margin-bottom: 32px;">Answer a few quick questions and an experienced personal injury attorney will review your case at no cost.</p>
-                <form action="https://formsubmit.co/intake@insiderlawyers.com" method="POST">
+                <form action="https://formsubmit.co/intake@insiderlawyers.com" method="POST" id="case-evaluation-form" onsubmit="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'form_submit', 'form_name': 'case_evaluation'}); return true;}">
                     <input type="hidden" name="_cc" value="john@insiderlawyers.com">
                     <input type="hidden" name="_subject" value="New Lead - Personal Injury Case Evaluation">
                     <input type="hidden" name="_template" value="table">
