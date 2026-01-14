@@ -281,7 +281,7 @@
             flex-wrap: wrap;
         }
         .trust-bar-logo {
-            height: 36px;
+            height: 40px;
             width: auto;
             object-fit: contain;
         }
@@ -290,9 +290,15 @@
             font-weight: 600;
             letter-spacing: 0.4px;
         }
+        .trust-bar-overlay {
+            margin-top: 24px;
+        }
         @media (max-width: 768px) {
             .see-through-bar .see-through-inner {
                 border-radius: 16px;
+            }
+            .trust-bar-logo {
+                height: 32px;
             }
         }
         .case-card:hover {
@@ -1006,6 +1012,16 @@
                     <img src="images/la/attorney-hero.webp" alt="Shawn and Partners" class="hero-attorney-img">
                 </picture>
             </div>
+            <div class="see-through-bar trust-bar-overlay">
+                <div class="see-through-inner">
+                    <div class="trust-bar-items">
+                        <img src="images/la/google-rating.png" alt="Google 5 Star Rating" class="trust-bar-logo">
+                        <img src="images/la/trust-badge-1.webp" alt="Trust Badge" class="trust-bar-logo">
+                        <img src="images/la/trust-badge-2.webp" alt="Trust Badge" class="trust-bar-logo">
+                        <img src="images/la/trust-badge-3.webp" alt="Trust Badge" class="trust-bar-logo">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1018,16 +1034,6 @@
                 <img src="images/la/trust-badge-3.webp" alt="Trust Badge" class="trust-badge-img">
                 <img src="images/la/lacba.jpg" alt="LACBA" class="trust-badge-img" style="height: 100px; width: auto; object-fit: contain;">
                 <img src="images/la/trust-badge-4.webp" alt="Trust Badge" class="trust-badge-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="see-through-bar section-with-bg">
-        <div class="see-through-inner">
-            <div class="trust-bar-items">
-                <img src="images/la/google-rating.png" alt="Google 5 Star Rating" class="trust-bar-logo">
-                <div class="trust-bar-text">Yelp 5.0 ★★★★★</div>
-                <div class="trust-bar-text">500+ 5-Star Reviews</div>
             </div>
         </div>
     </section>
