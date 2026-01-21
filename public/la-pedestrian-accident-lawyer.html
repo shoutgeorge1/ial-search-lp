@@ -1081,8 +1081,8 @@
             background: #f3f4f6;
         }
         .stop-sign {
-            width: 88px;
-            height: 88px;
+            width: 96px;
+            height: 96px;
             margin: 0 auto 16px;
             background: #dc2626;
             border-radius: 16px;
@@ -1091,15 +1091,47 @@
             justify-content: center;
             color: var(--brand-white);
             font-weight: 800;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             transform: rotate(45deg);
-            box-shadow: 0 10px 24px rgba(0,0,0,0.25);
-            border: 3px solid rgba(255,255,255,0.6);
+            position: relative;
+            box-shadow: 0 14px 30px rgba(220, 38, 38, 0.45), 0 0 20px rgba(220, 38, 38, 0.35);
+            border: 4px solid rgba(255,255,255,0.85);
         }
         .stop-sign span {
             transform: rotate(-45deg);
             display: block;
-            font-size: 14px;
+            font-size: 18px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        }
+        .stop-sign::before,
+        .stop-sign::after {
+            content: "";
+            position: absolute;
+            top: -14px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #fecaca, #ef4444 55%, #b91c1c 100%);
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 6px 14px rgba(239, 68, 68, 0.55), 0 0 10px rgba(239, 68, 68, 0.5);
+            animation: sirenPulse 1s infinite;
+        }
+        .stop-sign::before {
+            left: -22px;
+        }
+        .stop-sign::after {
+            right: -22px;
+            animation-delay: 0.5s;
+        }
+        @keyframes sirenPulse {
+            0%, 100% {
+                transform: scale(0.9);
+                opacity: 0.65;
+            }
+            50% {
+                transform: scale(1.25);
+                opacity: 1;
+            }
         }
         .office-info {
             margin-top: 32px;

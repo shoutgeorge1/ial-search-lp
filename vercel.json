@@ -6,6 +6,14 @@
     { "source": "/la-truck-accident-lawyer", "destination": "/la-truck-accident-lawyer.html" },
     { "source": "/la-motorcycle-accident-lawyer", "destination": "/la-motorcycle-accident-lawyer.html" },
     { "source": "/la-pedestrian-accident-lawyer", "destination": "/la-pedestrian-accident-lawyer.html" },
-    { "source": "/la-insurance-denied-injury", "destination": "/la-insurance-denied-injury.html" }
+    { "source": "/la-insurance-denied-injury", "destination": "/la-insurance-denied-injury.html" },
+    { "source": "/la-personal-injury-lawyer", "destination": "/la-personal-injury-lawyer.html" },
+    { "source": "/la-accident-lawyer", "destination": "/la-accident-lawyer.html" },
+    { "source": "/rear-end-accident-lawyer", "destination": "/la-car-accident-lawyer.html" },
+    { "source": "/rear-end-accident-lawyer.html", "destination": "/la-car-accident-lawyer.html" },
+    { "source": "/truck-accident-lawyer", "destination": "/la-truck-accident-lawyer.html" },
+    { "source": "/truck-accident-lawyer.html", "destination": "/la-truck-accident-lawyer.html" },
+    { "source": "/personal-injury-ca", "destination": "/la-personal-injury-lawyer.html" },
+    { "source": "/personal-injury-ca.html", "destination": "/la-personal-injury-lawyer.html" }
   ]
 }
