@@ -320,6 +320,13 @@
             object-fit: contain;
             filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35));
         }
+        .trust-bar-logo.yelp-logo {
+            height: 34px;
+            background: #ffffff;
+            padding: 4px 8px;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+        }
         .trust-bar-rating {
             display: flex;
             flex-direction: column;
@@ -919,6 +926,13 @@
         .review-badge img {
             height: 40px;
             width: auto;
+        }
+        .review-badge img.yelp-logo {
+            height: 30px;
+            background: #ffffff;
+            padding: 4px 8px;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
         }
         .review-badge {
             padding: 10px 18px;
@@ -1530,7 +1544,7 @@
                             </div>
                         </div>
                         <div class="trust-bar-item">
-                            <img src="/images/la/yelp-logo.jpg" alt="Yelp" class="trust-bar-logo">
+                            <img src="/images/la/yelp-logo.jpg" alt="Yelp" class="trust-bar-logo yelp-logo">
                             <div class="trust-bar-rating">
                                 <div class="trust-bar-text">Top Rated</div>
                                 <div class="trust-bar-stars">★★★★★</div>
@@ -1755,7 +1769,7 @@
                         <img src="/images/la/google-rating.png" alt="Google 5 Star Rating">
                     </div>
                     <div class="review-badge">
-                        <img src="/images/la/yelp-logo.jpg" alt="Yelp">
+                        <img src="/images/la/yelp-logo.jpg" alt="Yelp" class="yelp-logo">
                         <span class="review-badge-stars">★★★★★</span>
                     </div>
                 </div>
