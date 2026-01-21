@@ -1,5 +1,11 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/index.html" }
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/la-serious-injury", "destination": "/index.html" },
+    { "source": "/la-car-accident-lawyer", "destination": "/la-car-accident-lawyer.html" },
+    { "source": "/la-truck-accident-lawyer", "destination": "/la-truck-accident-lawyer.html" },
+    { "source": "/la-motorcycle-accident-lawyer", "destination": "/la-motorcycle-accident-lawyer.html" },
+    { "source": "/la-pedestrian-accident-lawyer", "destination": "/la-pedestrian-accident-lawyer.html" },
+    { "source": "/la-insurance-denied-injury", "destination": "/la-insurance-denied-injury.html" }
   ]
 }

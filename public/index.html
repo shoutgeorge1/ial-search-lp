@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experienced Los Angeles personal injury attorneys. Free consultation, no fee unless we win. Call now for help after your accident in LA.">
-    <title>Los Angeles Personal Injury Attorneys | LA Accident Lawyers | Free Consultation</title>
+    <meta name="description" content="Los Angeles serious injury lawyers for clear liability cases. If another party is at fault and insurance is involved, call now.">
+    <title>Los Angeles Serious Injury Lawyers | Clear Liability Cases</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -82,7 +82,7 @@
         }
         @media (max-width: 768px) {
             section {
-                padding: 48px 0;
+                padding: 40px 0;
             }
             .section-content {
                 padding: 32px 24px;
@@ -240,7 +240,7 @@
             }
         }
         .hero {
-            background: linear-gradient(rgba(12, 35, 52, 0.88), rgba(1, 54, 108, 0.82)), url('images/la/hero-bg.jpg') center center/cover;
+            background: linear-gradient(rgba(12, 35, 52, 0.88), rgba(1, 54, 108, 0.82)), url('https://ial-lp.vercel.app/images/la/hero-bg.jpg') center center/cover;
             min-height: 520px;
             display: flex;
             align-items: center;
@@ -259,7 +259,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('images/la/hero-bg.jpg') center center/cover;
+            background: url('https://ial-lp.vercel.app/images/la/hero-bg.jpg') center center/cover;
             background-attachment: fixed;
             opacity: 0.04;
             z-index: 0;
@@ -377,6 +377,29 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        .hero-image-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .hero-logo-badge {
+            position: static;
+            background: transparent;
+            padding: 0;
+        }
+        .hero-logo-badge img {
+            display: block;
+            width: 340px;
+            height: auto;
+            filter: drop-shadow(0 0 12px rgba(125, 200, 255, 0.45));
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .hero-logo-badge img {
+                width: 260px;
+            }
         }
         .service-areas {
             margin-top: 24px;
@@ -570,6 +593,19 @@
         .process-step:hover .process-step-number {
             transform: scale(1.1);
         }
+        .process-step h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            line-height: 1.3;
+            margin-bottom: 14px;
+        }
+        .process-step p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--brand-gray-700);
+        }
         .worth-section {
             background: linear-gradient(135deg, rgba(12, 35, 52, 0.12), rgba(1, 54, 108, 0.12));
             text-align: center;
@@ -702,7 +738,7 @@
             transform: translateY(-2px);
         }
         .case-form {
-            background: linear-gradient(135deg, rgba(12, 35, 52, 0.03), rgba(1, 54, 108, 0.03));
+            background: linear-gradient(135deg, #0c2334 0%, #0b2b5a 55%, #123a75 100%);
         }
         .form-container {
             max-width: 800px;
@@ -805,7 +841,7 @@
             width: 64px;
             height: 64px;
             border-radius: 18px;
-            background-image: linear-gradient(135deg, rgba(220, 38, 38, 0.2), rgba(127, 29, 29, 0.35)), url('images/ppc/settlement-texture.jpg');
+            background-image: linear-gradient(135deg, rgba(220, 38, 38, 0.2), rgba(127, 29, 29, 0.35)), url('https://ial-lp.vercel.app/images/ppc/settlement-texture.jpg');
             background-position: center;
             background-size: 140%;
             background-repeat: no-repeat;
@@ -824,7 +860,7 @@
             line-height: 1.2;
         }
         .case-results.section-with-bg::before {
-            background: url('images/ppc/settlement-texture.jpg') center/900px no-repeat;
+            background: url('https://ial-lp.vercel.app/images/ppc/settlement-texture.jpg') center/900px no-repeat;
             opacity: 0.06;
         }
         .result-type {
@@ -893,6 +929,11 @@
             gap: 24px;
             margin-top: 32px;
         }
+        @media (min-width: 1200px) {
+            .review-cards {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
         .review-card {
             background: var(--brand-white);
             padding: 32px;
@@ -932,7 +973,7 @@
             background: rgba(255, 255, 255, 0.8);
         }
         .promise-badge.gold {
-            background: url('images/ppc/gold-badge.jpg') center/cover no-repeat;
+            background: url('https://ial-lp.vercel.app/images/ppc/gold-badge.jpg') center/cover no-repeat;
             background-color: transparent;
             border-color: rgba(251, 186, 0, 0.2);
             color: var(--brand-navy);
@@ -1133,6 +1174,178 @@
             margin: 0 auto 16px;
             filter: drop-shadow(0 6px 16px rgba(12, 35, 52, 0.2));
         }
+        .qualify-section {
+            background: var(--brand-light-blue);
+        }
+        .qualify-card {
+            background: var(--brand-white);
+            border-radius: var(--card-radius);
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            border-left: 6px solid #16a34a;
+        }
+        .qualify-list,
+        .disqualify-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .qualify-list li,
+        .disqualify-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+        .qualify-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #16a34a;
+            font-weight: 700;
+        }
+        .qualify-note {
+            font-size: 15px;
+            color: var(--brand-gray-500);
+            margin-top: 16px;
+        }
+        .disqualify-section {
+            background: var(--brand-navy);
+        }
+        .disqualify-card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: var(--card-radius);
+            padding: 36px;
+            border-left: 6px solid #dc2626;
+        }
+        .disqualify-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #f87171;
+            font-weight: 700;
+        }
+        .process-icon {
+            display: inline-flex;
+            align-items: center;
+            flex: 0 0 auto;
+        }
+        .process-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: currentColor;
+        }
+        .process-icon img {
+            width: 56px;
+            height: 56px;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .process-icon img {
+                width: 64px;
+                height: 64px;
+            }
+            .process-step p {
+                font-size: 19px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .process-steps {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .go-stop-section {
+            background: var(--brand-white);
+        }
+        .go-stop-card {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 28px;
+            align-items: center;
+            background: var(--brand-white);
+            border-radius: var(--card-radius);
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            border: 2px solid var(--brand-border);
+            text-align: left;
+        }
+        .go-stop-icon {
+            display: grid;
+            place-items: center;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 8px;
+            border: 2px solid var(--brand-border);
+        }
+        .go-stop-icon img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            display: block;
+        }
+        .go-title {
+            color: #166534;
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+        .stop-title {
+            color: #b91c1c;
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+        .go-list,
+        .stop-list {
+            margin-top: 8px;
+        }
+        .go-list li,
+        .stop-list li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .stop-list li {
+            font-weight: 600;
+        }
+        .stop-card {
+            background: #fff5f5;
+            border-left: 6px solid #dc2626;
+        }
+        .go-card {
+            background: #f0fdf4;
+            border-left: 6px solid #16a34a;
+        }
+        .authority-section {
+            background: linear-gradient(135deg, #0c2334 0%, #0b2b5a 55%, #123a75 100%);
+            color: var(--brand-white);
+        }
+        .authority-section.section-with-bg::before {
+            opacity: 0;
+        }
+        .authority-section h2 {
+            color: #ffffff;
+        }
+        .authority-section p,
+        .authority-section li {
+            color: #e2e8f0;
+        }
+        .authority-section .trust-card {
+            background: #ffffff;
+        }
+        .authority-section .trust-card h3,
+        .authority-section .trust-card p {
+            color: #0f172a;
+        }
+        @media (max-width: 768px) {
+            .go-stop-card {
+                grid-template-columns: 1fr;
+            }
+            .go-stop-icon img {
+                width: 96px;
+                height: 96px;
+            }
+        }
     </style>
     <!-- GTM injected at top of head -->
     <!-- Google Tag Manager -->
@@ -1221,10 +1434,10 @@
         <div class="container">
             <div class="header-content">
                 <div style="display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
-                    <img src="images/la/logo.png" alt="Insider Accident Lawyers" class="header-logo" style="filter: brightness(0);">
+                    <img src="https://ial-lp.vercel.app/images/la/logo.png" alt="Insider Accident Lawyers" class="header-logo" style="filter: brightness(0);">
                     <nav class="header-nav">
                         <a href="#your-case">Your Case</a>
-                        <a href="#case-evaluation">Free Evaluation</a>
+                        <a href="#case-evaluation">Case Review</a>
                         <a href="#about-us">About Us</a>
                         <a href="#reviews">Reviews</a>
                         <a href="#footer-contact">Contact Us</a>
@@ -1232,7 +1445,7 @@
                 </div>
                 <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
                     <div class="header-phone" data-callrail-phone="844-467-4335">Call: <a href="tel:844-467-4335" style="color: var(--brand-blue); text-decoration: none;">844-467-4335</a></div>
-                    <a href="tel:844-467-4335" class="btn-secondary" data-callrail-phone="844-467-4335" style="padding: 10px 20px; font-size: 16px;">Free Case Review</a>
+                    <a href="tel:844-467-4335" class="btn-secondary" data-callrail-phone="844-467-4335" style="padding: 10px 20px; font-size: 16px;">Call an Attorney</a>
                 </div>
             </div>
         </div>
@@ -1242,47 +1455,53 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Experienced Personal Injury Attorneys in Los Angeles<br><span class="highlight">Were You Injured in an Accident?</span></h1>
-                    <p class="hero-subhead">Get a free consultation with an experienced accident attorney. No fee unless we win your case.</p>
+                    <h1>Los Angeles <span class="highlight">Serious Injury</span> Lawyers<br>Clear Fault. Active Insurance.</h1>
+                    <p class="hero-subhead">If another party caused the harm and insurance is involved, call to speak with an attorney.</p>
                     <div class="hero-cta-group">
-                        <a href="tel:844-467-4335" class="btn-primary" data-callrail-phone="844-467-4335">Talk to a Lawyer Now</a>
-                        <a href="#case-evaluation" class="btn-secondary">Check My Case</a>
+                        <a href="tel:844-467-4335" class="btn-primary" data-callrail-phone="844-467-4335">Call to Speak With an Attorney</a>
+                        <a href="#case-evaluation" class="btn-secondary">See If Your Case Fits</a>
                     </div>
+                    <p class="subhead-text" style="color: rgba(255,255,255,0.9); margin-bottom: 8px;">We only take cases involving real injuries and clear responsibility.</p>
                     <div class="service-areas">
-                        <strong>Serving:</strong> Los Angeles County, Orange County, Riverside County, Ventura County, San Diego County, Imperial County, San Bernardino County, Santa Barbara County, and San Luis Obispo County
+                        <strong>Serving:</strong> Los Angeles County and nearby communities.
                     </div>
                     <div class="trust-badges">
                         <div class="trust-badge">
                             <span>✓</span>
-                            <span>12+ Years of Experience</span>
+                            <span>Serious injury focus</span>
                         </div>
                         <div class="trust-badge">
                             <span>✓</span>
-                            <span>No Fee Unless We Win</span>
+                            <span>No upfront cost for qualified cases</span>
                         </div>
                         <div class="trust-badge">
                             <span>✓</span>
-                            <span>Free Consultation - No Obligation</span>
+                            <span>Trial-ready when needed</span>
                         </div>
                     </div>
                 </div>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/la/attorney-mobile.webp">
-                    <img src="images/la/attorney-hero.webp" alt="Shawn and Partners" class="hero-attorney-img">
-                </picture>
+                <div class="hero-image-wrap">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="https://ial-lp.vercel.app/images/la/attorney-mobile.webp">
+                        <img src="https://ial-lp.vercel.app/images/la/attorney-hero.webp" alt="Shawn and Partners" class="hero-attorney-img">
+                    </picture>
+                    <div class="hero-logo-badge">
+                        <img src="https://i.imgur.com/vOi7FSN.png" alt="The Insider">
+                    </div>
+                </div>
             </div>
             <div class="see-through-bar trust-bar-overlay">
                 <div class="see-through-inner">
                     <div class="trust-bar-items">
                         <div class="trust-bar-item">
-                            <img src="images/la/google-rating.png" alt="Google 5 Star Rating" class="trust-bar-logo">
+                            <img src="https://ial-lp.vercel.app/images/la/google-rating.png" alt="Google 5 Star Rating" class="trust-bar-logo">
                             <div class="trust-bar-rating">
                                 <div class="trust-bar-text">Top Rated</div>
                                 <div class="trust-bar-stars">★★★★★</div>
                             </div>
                         </div>
                         <div class="trust-bar-item">
-                            <img src="images/la/yelp-logo.jpg" alt="Yelp" class="trust-bar-logo">
+                            <img src="https://ial-lp.vercel.app/images/la/yelp-logo.jpg" alt="Yelp" class="trust-bar-logo">
                             <div class="trust-bar-rating">
                                 <div class="trust-bar-text">Top Rated</div>
                                 <div class="trust-bar-stars">★★★★★</div>
@@ -1294,262 +1513,93 @@
         </div>
     </section>
 
-    <section class="trust-badges-section">
-        <div class="trust-badges-container">
-            <div class="trust-badges-headline">Trusted & Recognized By</div>
-            <div class="trust-badges-row">
-                <img src="images/la/trust-badge-1.webp" alt="Trust Badge" class="trust-badge-img">
-                <img src="images/la/trust-badge-2.webp" alt="Trust Badge" class="trust-badge-img">
-                <img src="images/la/trust-badge-3.webp" alt="Trust Badge" class="trust-badge-img pop">
-                <img src="images/la/lacba.jpg" alt="LACBA" class="trust-badge-img" style="height: 100px; width: auto; object-fit: contain;">
-                <img src="images/la/trust-badge-4.webp" alt="Trust Badge" class="trust-badge-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="accident-types section-with-bg">
+    <section id="your-case" class="core-trust section-with-bg go-stop-section">
         <div class="container">
-            <h2>Types of Accidents We Handle</h2>
-            <p class="lead-text" style="text-align: center; margin-bottom: 32px; max-width: 700px; margin-left: auto; margin-right: auto;">Our accident attorneys help injured people in Los Angeles County recover compensation for medical bills, lost wages, and pain and suffering.</p>
-            <div class="accident-grid">
-                <div class="accident-item">
-                    <div class="accident-icon">🚗</div>
-                    <div class="accident-item-text">Car Accidents</div>
+            <div class="go-stop-card go-card">
+                <div class="go-stop-icon">
+                    <img src="https://t3.ftcdn.net/jpg/02/21/52/64/360_F_221526496_lJ9Fx7zGyqbb8TdQL4fOumlFYYbJ0KPb.jpg" alt="Go icon">
                 </div>
-                <div class="accident-item">
-                    <div class="accident-icon">🏍️</div>
-                    <div class="accident-item-text">Motorcycle Accidents</div>
-                </div>
-                <div class="accident-item">
-                    <div class="accident-icon">🚲</div>
-                    <div class="accident-item-text">Bicycle Accidents</div>
-                </div>
-                <div class="accident-item">
-                    <div class="accident-icon">🚚</div>
-                    <div class="accident-item-text">Truck Accidents</div>
-                </div>
-                <div class="accident-item">
-                    <div class="accident-icon">⚖️</div>
-                    <div class="accident-item-text">Wrongful Death</div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 32px;">
-                <a href="tel:844-467-4335" class="btn-secondary" data-callrail-phone="844-467-4335">Get Legal Help Now</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="your-case" class="worth-section section-with-bg" style="background: var(--brand-white); padding-top: 100px;">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 16px; font-size: 42px;">Do I Have a Case?</h2>
-            <p class="lead-text" style="text-align: center; margin-bottom: 56px; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 20px;">If you were hurt in an accident, you may be entitled to compensation. Here's when we can help:</p>
-            <div style="max-width: 1000px; margin: 0 auto;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 48px;">
-                    <div style="background: var(--brand-white); padding: 32px; border-radius: 12px; border-left: 5px solid var(--brand-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; hover:transform: translateY(-4px);">
-                        <div style="display: flex; align-items: start; gap: 20px;">
-                            <div style="width: 48px; height: 48px; min-width: 48px; background: linear-gradient(135deg, var(--brand-blue), var(--brand-navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--brand-white); font-weight: 700; font-size: 24px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(18, 62, 122, 0.3);">✓</div>
-                            <div>
-                                <h4 style="margin-bottom: 12px; font-size: 20px; font-weight: 700; color: var(--brand-gray-900); line-height: 1.3;">You Were Injured</h4>
-                                <p style="font-size: 16px; line-height: 1.7; color: var(--brand-gray-700); margin: 0;">Car crash, motorcycle accident, truck wreck, or any other accident that caused you harm.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-card" style="background: var(--brand-white); padding: 32px; border-radius: 12px; border-left: 5px solid var(--brand-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;">
-                        <div style="display: flex; align-items: start; gap: 20px;">
-                            <div style="width: 48px; height: 48px; min-width: 48px; background: linear-gradient(135deg, var(--brand-blue), var(--brand-navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--brand-white); font-weight: 700; font-size: 24px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(18, 62, 122, 0.3);">✓</div>
-                            <div>
-                                <h4 style="margin-bottom: 12px; font-size: 20px; font-weight: 700; color: var(--brand-gray-900); line-height: 1.3;">Someone Else Was at Fault</h4>
-                                <p style="font-size: 16px; line-height: 1.7; color: var(--brand-gray-700); margin: 0;">Another driver, property owner, or person's negligence caused your injuries.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-card" style="background: var(--brand-white); padding: 32px; border-radius: 12px; border-left: 5px solid var(--brand-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;">
-                        <div style="display: flex; align-items: start; gap: 20px;">
-                            <div style="width: 48px; height: 48px; min-width: 48px; background: linear-gradient(135deg, var(--brand-blue), var(--brand-navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--brand-white); font-weight: 700; font-size: 24px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(18, 62, 122, 0.3);">✓</div>
-                            <div>
-                                <h4 style="margin-bottom: 12px; font-size: 20px; font-weight: 700; color: var(--brand-gray-900); line-height: 1.3;">You Have Expenses</h4>
-                                <p style="font-size: 16px; line-height: 1.7; color: var(--brand-gray-700); margin: 0;">Medical bills, lost wages, or ongoing treatment costs from your accident.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-card" style="background: var(--brand-white); padding: 32px; border-radius: 12px; border-left: 5px solid var(--brand-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;">
-                        <div style="display: flex; align-items: start; gap: 20px;">
-                            <div style="width: 48px; height: 48px; min-width: 48px; background: linear-gradient(135deg, var(--brand-blue), var(--brand-navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--brand-white); font-weight: 700; font-size: 24px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(18, 62, 122, 0.3);">✓</div>
-                            <div>
-                                <h4 style="margin-bottom: 12px; font-size: 20px; font-weight: 700; color: var(--brand-gray-900); line-height: 1.3;">Low Settlement Offer</h4>
-                                <p style="font-size: 16px; line-height: 1.7; color: var(--brand-gray-700); margin: 0;">The insurance company offered less than what your case is actually worth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-card" style="background: var(--brand-white); padding: 32px; border-radius: 12px; border-left: 5px solid var(--brand-blue); box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;">
-                        <div style="display: flex; align-items: start; gap: 20px;">
-                            <div style="width: 48px; height: 48px; min-width: 48px; background: linear-gradient(135deg, var(--brand-blue), var(--brand-navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--brand-white); font-weight: 700; font-size: 24px; flex-shrink: 0; box-shadow: 0 4px 8px rgba(18, 62, 122, 0.3);">✓</div>
-                            <div>
-                                <h4 style="margin-bottom: 12px; font-size: 20px; font-weight: 700; color: var(--brand-gray-900); line-height: 1.3;">Not Sure What to Do</h4>
-                                <p style="font-size: 16px; line-height: 1.7; color: var(--brand-gray-700); margin: 0;">You're confused about your rights or need help navigating the legal process.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="background: linear-gradient(135deg, var(--brand-light-blue), rgba(234, 242, 251, 0.8)); padding: 40px; border-radius: 12px; text-align: center; margin-bottom: 40px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); border: 2px solid var(--brand-blue);">
-                    <p style="font-size: 22px; font-weight: 700; color: var(--brand-navy); margin-bottom: 16px;">Every case is unique</p>
-                    <p style="font-size: 18px; line-height: 1.7; color: var(--brand-gray-700); margin: 0; max-width: 650px; margin-left: auto; margin-right: auto;">Talk to an experienced personal injury attorney today. We'll review your situation for free and explain your options in plain English.</p>
-                </div>
-                <div style="text-align: center;">
-                    <a href="tel:844-467-4335" class="btn-primary" data-callrail-phone="844-467-4335" style="font-size: 20px; padding: 18px 40px; box-shadow: 0 6px 20px rgba(245, 196, 0, 0.4);">Get My Case Reviewed</a>
+                <div>
+                    <h2 class="go-title">GO — THESE CASES ARE A FIT</h2>
+                    <ul class="go-list">
+                        <li><strong>Serious physical injuries</strong></li>
+                        <li><strong>Medical treatment already started</strong></li>
+                        <li><strong>Another party clearly at fault</strong></li>
+                        <li><strong>Insurance involved, delayed, or denied</strong></li>
+                    </ul>
+                    <p class="qualify-note"><em>If this doesn’t describe your situation, we may not be the right firm.</em></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="core-trust section-with-bg">
+    <section class="core-trust section-with-bg go-stop-section">
         <div class="container">
-            <h2 style="text-align: center; font-size: 42px; margin-bottom: 24px;">Why Choose Our Personal Injury Attorneys</h2>
-            <p style="text-align: center; font-size: 20px; color: var(--brand-gray-700); margin-bottom: 56px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7;">Experienced accident attorneys who understand insurance claims and fight for maximum compensation.</p>
-            <div class="trust-grid">
-                <div class="trust-card">
-                    <div class="trust-icon">⚖️</div>
-                    <h3>12+ Years of Experience</h3>
-                    <p>Our personal injury attorneys have extensive experience handling accident cases throughout Los Angeles County. We know how to build strong cases and negotiate with insurance companies.</p>
+            <div class="go-stop-card stop-card">
+                <div class="go-stop-icon">
+                    <img src="https://static.vecteezy.com/system/resources/previews/055/108/760/non_2x/stop-sign-stop-icon-symbol-traffic-signs-png.png" alt="Stop sign">
                 </div>
-                <div class="trust-card">
-                    <div class="trust-icon">💵</div>
-                    <h3>No Fee Unless We Win</h3>
-                    <p>We work on a contingency fee basis. You don't pay attorney fees unless we recover compensation for you. No upfront costs, no risk.</p>
+                <div>
+                    <h2 class="stop-title">STOP — DO NOT CALL FOR THESE</h2>
+                    <ul class="stop-list">
+                        <li>Minor fender benders</li>
+                        <li>No-injury accidents</li>
+                        <li>Property damage only</li>
+                        <li>General insurance questions</li>
+                        <li>Referrals, vendors, or marketing calls</li>
+                    </ul>
                 </div>
-                <div class="trust-card">
-                    <div class="trust-icon">🎯</div>
-                    <h3>Former Insurance Insight</h3>
-                    <p>Our attorney worked with insurance companies before representing injured people. This unique perspective helps us build stronger cases and negotiate better settlements for our clients.</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 48px;">
-                <a href="tel:844-467-4335" class="btn-secondary" data-callrail-phone="844-467-4335">Speak With an Attorney</a>
             </div>
         </div>
     </section>
 
     <section class="process-section section-with-bg">
         <div class="container">
-            <h2 style="text-align: center;">Your Potential Case</h2>
+            <h2 style="text-align: center;">Process Snapshot</h2>
             <div class="process-steps">
                 <div class="process-step">
-                    <div class="process-step-number">Step 1</div>
-                    <h3>Free Case Evaluation</h3>
-                    <img src="images/la/process-step-1.webp" alt="Case Evaluation" class="process-step-img">
-                    <p>We'll review your accident details and explain your rights. We handle all communication with insurance companies. No cost to evaluate your case.</p>
+                    <div class="process-step-number">1</div>
+                    <h3><span class="process-icon" aria-hidden="true"><img src="https://i.pinimg.com/564x/3d/a7/b3/3da7b352e0afb625e50ee95a6470c2e7.jpg" alt=""></span>You call</h3>
+                    <p>We assess injury severity and fault.</p>
                 </div>
                 <div class="process-step">
-                    <div class="process-step-number">Step 2</div>
-                    <h3>Building Your Case</h3>
-                    <img src="images/la/process-step-2.webp" alt="Case Implementation" class="process-step-img">
-                    <p>Our accident attorneys investigate, gather evidence, and review medical records. We build a strong case and work quickly to get you the settlement you deserve.</p>
+                    <div class="process-step-number">2</div>
+                    <h3><span class="process-icon" aria-hidden="true"><img src="https://static.vecteezy.com/system/resources/previews/011/385/238/non_2x/review-flat-icon-free-vector.jpg" alt=""></span>We review the facts</h3>
+                    <p>To confirm the case qualifies.</p>
                 </div>
                 <div class="process-step">
-                    <div class="process-step-number">Step 3</div>
-                    <h3>Getting You Maximum Compensation</h3>
-                    <img src="images/la/process-step-3.webp" alt="Case Closure" class="process-step-img">
-                    <p>We negotiate aggressively for maximum compensation. Our experienced personal injury attorneys are prepared to take cases to trial when needed. No fee unless we win.</p>
+                    <div class="process-step-number">3</div>
+                    <h3><span class="process-icon" aria-hidden="true"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkqbNN9kRqRpoozmAr_O51H7lg9xdyph9XQ&s" alt=""></span>We handle insurance</h3>
+                    <p>So you do not say the wrong thing.</p>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 48px;">
-                <a href="tel:844-467-4335" class="btn-primary" data-callrail-phone="844-467-4335">Start My Free Review</a>
-                <p style="margin-top: 16px; color: var(--brand-gray-700);">Call Now <a href="tel:844-467-4335" style="color: var(--brand-blue); text-decoration: none; font-weight: 600;"><span data-callrail-phone="844-467-4335">844-467-4335</span></a> | Available 24/7</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="worth-section section-with-bg">
-        <div class="container">
-            <h2 style="font-size: 42px; margin-bottom: 24px;">How Much Compensation Could You Receive?</h2>
-            <p style="font-size: 20px; color: var(--brand-gray-700); max-width: 800px; margin: 0 auto 40px; line-height: 1.7;">Every case is unique. Compensation depends on your injuries, medical expenses, lost wages, and other damages. Our experienced accident attorneys will evaluate your case and fight for the maximum compensation you deserve.</p>
-            <div style="text-align: center;">
-                <a href="tel:844-467-4335" class="btn-primary" data-callrail-phone="844-467-4335" style="font-size: 20px; padding: 18px 40px;">Estimate My Case Value</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about-us" class="attorney-bio section-with-bg" style="padding-top: 100px;">
-        <div class="container">
-            <div class="attorney-bio-content">
-                <img src="images/la/attorney-hero.webp" alt="Shawn Rokni" class="attorney-photo">
-                <div class="attorney-details">
-                    <h2>Meet Your Attorney</h2>
-                    <div class="attorney-name">Shawn Rokni</div>
-                    <div class="attorney-title">Attorney at Law</div>
-                    <p>Shawn Rokni is an experienced personal injury attorney based in Los Angeles who has represented injured clients throughout Los Angeles County in car accidents, motorcycle crashes, and other serious injury cases.</p>
-                    <p style="margin-top: 16px;">Prior to representing injured people, Shawn worked with insurance companies. This former insurance attorney experience gives him unique insight into how insurance companies evaluate and defend claims, helping him build stronger cases and negotiate better settlements for his clients.</p>
-                    <h3 style="margin-top: 32px;">Education</h3>
-                    <ul class="education-list">
-                        <li>J.D., Chapman University School of Law</li>
-                        <li>B.A., University of California - Los Angeles</li>
-                    </ul>
-                    <h3 style="margin-top: 32px;">Admissions & Memberships</h3>
-                    <div class="associations">
-                        <div class="association-badge">Orange County Bar Association</div>
-                        <div class="association-badge">Los Angeles County Bar Association</div>
-                        <div class="association-badge">Consumer Attorneys of California</div>
-                        <div class="association-badge">Consumer Attorneys Association of Los Angeles</div>
-                        <div class="association-badge">Trial Lawyers University</div>
-                        <div class="association-badge">The National Trial Lawyer</div>
-                    </div>
+                <div class="process-step">
+                    <div class="process-step-number">4</div>
+                    <h3><span class="process-icon" aria-hidden="true"><img src="https://cdn-icons-png.flaticon.com/512/3212/3212863.png" alt=""></span>You focus on recovery</h3>
+                    <p>While we manage the claim.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="reviews" class="reviews-section section-with-bg" style="padding-top: 100px;">
+    <section id="about-us" class="attorney-bio section-with-bg authority-section" style="padding-top: 100px;">
         <div class="container">
-            <div class="reviews-header">
-                <h2>What Our Clients Say</h2>
-                <p style="font-size: 18px; color: var(--brand-gray-700); margin-bottom: 24px;">Real reviews from real clients across Los Angeles County</p>
-                <div class="review-badges">
-                    <div class="review-badge">
-                        <img src="images/la/google-rating.png" alt="Google 5 Star Rating">
-                        <div class="review-badge-stars">★★★★★</div>
-                    </div>
-                    <div class="review-badge">
-                        <img src="images/la/yelp-logo.jpg" alt="Yelp">
-                        <div class="review-badge-stars">★★★★★</div>
-                    </div>
+            <h2 style="text-align: center; font-size: 42px; margin-bottom: 24px;">Authority & Local Focus</h2>
+            <p style="text-align: center; font-size: 20px; color: #e2e8f0; margin-bottom: 56px; max-width: 760px; margin-left: auto; margin-right: auto; line-height: 1.7;">You want someone local who listens, explains the next step, and protects your time. We keep our caseload tight so you get real updates.</p>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">⚖️</div>
+                    <h3>Local injury knowledge you can feel</h3>
+                    <p>You get a team that knows LA roads, hospitals, and insurers.</p>
                 </div>
-            </div>
-            <div class="review-cards">
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p style="font-style: italic; margin-bottom: 12px;">"Thanks Shawn you did a great job in my case, great customer service. I totally recommend this lawyers"</p>
-                    <p style="font-weight: 600; color: var(--brand-gray-700);">- Maggie Romero</p>
-                    <p style="font-size: 14px; color: var(--brand-gray-500);">12 days ago</p>
+                <div class="trust-card">
+                    <div class="trust-icon">📍</div>
+                    <h3>Pressure on insurance from day one</h3>
+                    <p>Your case is prepared like it could go to trial, so adjusters take it seriously.</p>
                 </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p style="font-style: italic; margin-bottom: 12px;">"Self-Explanatory. Excellent and professional"</p>
-                    <p style="font-weight: 600; color: var(--brand-gray-700);">- L'unique Malcom</p>
-                    <p style="font-size: 14px; color: var(--brand-gray-500);">19 days ago</p>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p style="font-style: italic; margin-bottom: 12px;">"Shawn and his team were amazing throughout my entire case. They kept me informed every step of the way and got me a great settlement. Highly recommend!"</p>
-                    <p style="font-weight: 600; color: var(--brand-gray-700);">- Robert Chen</p>
-                    <p style="font-size: 14px; color: var(--brand-gray-500);">3 weeks ago</p>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p style="font-style: italic; margin-bottom: 12px;">"Professional, responsive, and got results. They handled everything with my insurance company and I didn't have to worry about a thing."</p>
-                    <p style="font-weight: 600; color: var(--brand-gray-700);">- Maria Gonzalez</p>
-                    <p style="font-size: 14px; color: var(--brand-gray-500);">1 month ago</p>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p style="font-style: italic; margin-bottom: 12px;">"Best decision I made after my accident. The team was compassionate, knowledgeable, and fought hard for me. Couldn't be happier with the outcome."</p>
-                    <p style="font-weight: 600; color: var(--brand-gray-700);">- James Wilson</p>
-                    <p style="font-size: 14px; color: var(--brand-gray-500);">2 months ago</p>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p style="font-style: italic; margin-bottom: 12px;">"From the free consultation to case resolution, everything was handled professionally. They truly care about their clients and it shows."</p>
-                    <p style="font-weight: 600; color: var(--brand-gray-700);">- Sarah Johnson</p>
-                    <p style="font-size: 14px; color: var(--brand-gray-500);">2 months ago</p>
+                <div class="trust-card">
+                    <div class="trust-icon">🛡️</div>
+                    <h3>Clear answers, fast</h3>
+                    <p>If it is not a fit, you hear it quickly. No runaround.</p>
                 </div>
             </div>
         </div>
@@ -1558,11 +1608,16 @@
     <section id="case-evaluation" class="case-form" style="padding-top: 100px;">
         <div class="container">
             <div class="form-container">
-                <div style="text-align: center; margin-bottom: 16px;">
-                    <div class="cta-badge">Free & Confidential</div>
+                <div style="text-align: center; margin-bottom: 12px;">
+                    <div class="cta-badge">Confidential Review</div>
                 </div>
-                <h2 class="cta-heading" style="text-align: center;">Get Your Free Case Evaluation in <span>2 Minutes</span></h2>
-                <p style="text-align: center; font-size: 18px; color: var(--brand-gray-700); margin-bottom: 32px;">Answer a few quick questions and an experienced personal injury attorney will review your case at no cost.</p>
+                <h2 class="cta-heading" style="text-align: center;">For serious injuries, calling is faster</h2>
+                <p style="text-align: center; font-size: 18px; color: var(--brand-gray-700); margin-bottom: 16px;">This form is reviewed manually.</p>
+                <p style="text-align: center; font-size: 18px; color: var(--brand-gray-700); margin-bottom: 24px;">We focus on cases with clear fault and active medical treatment.</p>
+                <div style="text-align: center; margin-bottom: 32px;">
+                    <a href="tel:844-467-4335" class="btn-primary" data-callrail-phone="844-467-4335">Call to Speak With an Attorney</a>
+                    <p style="margin-top: 12px; color: var(--brand-gray-700);">Or submit a short case review.</p>
+                </div>
                 <form action="https://formsubmit.co/intake@insiderlawyers.com" method="POST" id="case-evaluation-form" onsubmit="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'form_submit', 'form_name': 'case_evaluation'}); return true;}">
                     <input type="hidden" name="_cc" value="john@insiderlawyers.com">
                     <input type="hidden" name="_subject" value="New Lead - Personal Injury Case Evaluation">
@@ -1655,79 +1710,26 @@
                             <label for="text_consent">I agree to receive text messages. Message and data rates may apply. Reply STOP to opt out.</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 24px;">Get My Free Review</button>
+                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 24px;">Request Case Review</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="case-results section-with-bg">
+    <section id="reviews" class="reviews-section section-with-bg" style="padding-top: 100px;">
         <div class="container">
-            <h2 style="text-align: center; font-size: 42px; margin-bottom: 16px;">Case Results</h2>
-            <p style="text-align: center; font-size: 20px; color: var(--brand-gray-700); margin-bottom: 56px; line-height: 1.7;">Millions Recovered for Injury Victims</p>
-            <div class="results-grid">
-                <div class="result-card">
-                    <div class="result-label">Settlement</div>
-                    <div class="result-amount">$6,000,000</div>
-                    <div class="result-type">Car Accident</div>
-                    <div class="result-meta">Results depend on the facts of each case.</div>
+            <div class="reviews-header">
+                <h2>Reviews</h2>
+                <p style="font-size: 18px; color: var(--brand-gray-700); margin-bottom: 24px;">Google and Yelp ratings.</p>
+                <div class="review-badges">
+                    <div class="review-badge">
+                        <img src="https://ial-lp.vercel.app/images/la/google-rating.png" alt="Google 5 Star Rating">
+                    </div>
+                    <div class="review-badge">
+                        <img src="https://ial-lp.vercel.app/images/la/yelp-logo.jpg" alt="Yelp">
+                        <span class="review-badge-stars">★★★★★</span>
+                    </div>
                 </div>
-                <div class="result-card">
-                    <div class="result-label">Settlement</div>
-                    <div class="result-amount">$2,400,000</div>
-                    <div class="result-type">Bicycle Accident</div>
-                    <div class="result-meta">Results depend on the facts of each case.</div>
-                </div>
-                <div class="result-card">
-                    <div class="result-label">Settlement</div>
-                    <div class="result-amount">$2,500,000</div>
-                    <div class="result-type">Wrongful Death</div>
-                    <div class="result-meta">Results depend on the facts of each case.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="value-proposition section-with-bg">
-        <div class="container">
-            <div class="promise-header">
-                <span class="promise-badge gold">Official Commitment</span>
-                <h2 style="text-align: center; font-size: 42px; margin-bottom: 24px;">Our Promise</h2>
-            </div>
-            <div class="value-grid">
-                <div class="value-item">
-                    <h3>Provide You The Maximum Compensation</h3>
-                    <p>We work diligently to ensure you receive the full compensation you're entitled to under the law.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Create Direct, Stress-Free Contact With The Attorney</h3>
-                    <p>You'll work directly with experienced attorneys, not case managers. We keep you informed every step of the way.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Educate You About Your Rights And Protect Them</h3>
-                    <p>We'll explain your legal rights and options, and fight to protect your interests throughout the process.</p>
-                </div>
-            </div>
-            <div class="advantage-card">
-                <div class="promise-header" style="margin-bottom: 16px;">
-                    <span class="promise-badge">Firm Policy</span>
-                </div>
-                <h3 style="text-align: center; margin-bottom: 20px; font-size: 28px; color: var(--brand-navy);">The Firm's Advantage</h3>
-                <p style="text-align: center; font-size: 22px; font-weight: 600; color: var(--brand-navy); margin-bottom: 16px;">Available 24 Hours A Day</p>
-                <p style="text-align: center; margin-top: 16px; color: var(--brand-gray-700); font-size: 18px; line-height: 1.7; max-width: 700px; margin-left: auto; margin-right: auto;">Our firm is committed to being available when you need us. We understand that accidents don't happen on a schedule, and we're here to help whenever you need to speak with an attorney.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="map-section" class="map-section" style="padding-top: 100px;">
-        <div class="container">
-            <h2 style="text-align: center;">Our Office Location</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps?q=Insider%20Accident%20Lawyers%20Los%20Angeles%20CA&output=embed" class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="office-info">
-                <h3>Insider Accident Lawyers</h3>
-                <p style="font-size: 18px; font-weight: 500; color: var(--brand-gray-900); margin-top: 8px;">Koreatown, Los Angeles, CA</p>
             </div>
         </div>
     </section>
@@ -1735,11 +1737,11 @@
     <section class="final-cta">
         <div class="container">
             <div class="stop-sign"><span>STOP</span></div>
-            <h2>Don’t Accept Anything Until You Know Your Case Value</h2>
-            <p>Insurance companies move fast. Protect your claim before you sign or settle.</p>
+            <h2>Serious injury cases only</h2>
+            <p>Calls are reviewed carefully. Clear fault is required. If it is not a fit, we will tell you quickly.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="tel:844-467-4335" class="btn-secondary" data-callrail-phone="844-467-4335">Talk to a Lawyer Now</a>
-                <a href="#case-evaluation" class="btn-primary">Check My Case</a>
+                <a href="tel:844-467-4335" class="btn-secondary" data-callrail-phone="844-467-4335">Call to Speak With an Attorney</a>
+                <a href="#case-evaluation" class="btn-primary">See If Your Case Fits</a>
             </div>
         </div>
     </section>
@@ -1753,15 +1755,15 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p>Call Now for a Free Consultation</p>
+                    <p>Call Now to Speak With an Attorney</p>
                     <div class="footer-phone" data-callrail-phone="844-467-4335"><a href="tel:844-467-4335" style="color: var(--brand-white); text-decoration: none;">844-467-4335</a></div>
                     <p>Available 24/7</p>
-                    <p style="margin-top: 8px;">No Fee Unless We Win</p>
+                    <p style="margin-top: 8px;">No upfront cost for qualified cases</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <p><a href="#your-case" style="color: var(--brand-white); text-decoration: none;">Your Case</a></p>
-                    <p><a href="#case-evaluation" style="color: var(--brand-white); text-decoration: none;">Free Case Evaluation</a></p>
+                    <p><a href="#case-evaluation" style="color: var(--brand-white); text-decoration: none;">Case Review</a></p>
                     <p><a href="#about-us" style="color: var(--brand-white); text-decoration: none;">About Us</a></p>
                     <p><a href="#reviews" style="color: var(--brand-white); text-decoration: none;">Reviews</a></p>
                     <p><a href="#footer-contact" style="color: var(--brand-white); text-decoration: none;">Contact Us</a></p>
